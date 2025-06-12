@@ -29,7 +29,7 @@ Welcome to my study repository! Here I document my journey as a developer, gathe
         - [First steps](./pythoncodes/aws-restart/first-steps) - This is all my first codes in Python.
         - [Sequence Cleaning](./pythoncodes/aws-restart/sequenceCleaning/) - An study about loops, conditionals and others.
     - [My tests](./pythoncodes/myTests/) - To any coding test I have or will made (it can be in portuguese)
-    -  College (coming soon)
+    -  [College](./pythoncodes/college/)
 
 - JavaScript
     - Udemy Course (coming soon)
