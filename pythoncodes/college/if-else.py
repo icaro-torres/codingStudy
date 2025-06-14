@@ -53,7 +53,7 @@ print(f"The total price to be paid for electricity is: R$ {total}.")
 
 # this code calculates the price to be paid for electricity based on the amount of kWh consumed and the type of installation.
 
-# i could do the last one likke this too:
+# i could do the last one like this too:
 '''
 elif kWh <= 5000:
         price = 0.55
