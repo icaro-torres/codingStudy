@@ -63,6 +63,7 @@ print("The number of even numbers entered is: ", qtde)
 '''
 
 # this code prints a multiplication table from 1 to 10 using nested while loops. the outer loop iterates through the multiplication tables (1 to 10), and the inner loop iterates through the numbers (1 to 10) for each multiplication table.
+'''
 multiplication_table = 1
 while multiplication_table <= 10: # outer loop for multiplication tables
     number = 1  #  reset the number for each multiplication table
@@ -72,3 +73,54 @@ while multiplication_table <= 10: # outer loop for multiplication tables
         number += 1  # increment the number for the next multiplication
     multiplication_table += 1 # increment the multiplication table for the next iteration
 print("Complete multiplication table!")
+'''
+
+'''
+for multiplication_table in range(1, 11):
+    for number in range(1, 11):
+        value = multiplication_table * number
+        print(f"{multiplication_table} x {number} = {value}")
+'''
+
+'''
+for x in range(1, 12):
+    if x % 2 == 0:
+        print(f"{x} is even, skipping...")
+        continue
+    if x == 10:
+        break
+    print(x)
+'''
+
+# this is a exercise that prints the first 100 numbers divided by 2, starting from 1. it increments the number by 1 in each iteration and prints the result of the division. the teacher asked what was the error of the code (the original was n = 1, while n <= 100: print(n/2)) without the increment n += 1, which would cause an infinite loop. it doesn't take me a long time to figure it out, tho.
+'''
+n = 1
+while n <= 100:
+    n += 1
+    print(n/2)
+'''
+
+# this exercise prompts the user to enter a number and calculates its square and square root. the loop continues until the user enters 0, at which point it exits the loop and prints a message indicating that the loop has ended. this was taking a while to figure out, but i finally got it right.
+'''
+import math
+
+n = 0
+while True:
+    n = int(input("Enter a number (0 if you want to stop): "))
+    if n == 0:
+        print("Exiting the loop.")
+        break
+    else:
+        square = n ** 2
+        square_root = math.sqrt(n)
+        print(f"The square of {n} is {square} and the square root is {square_root:.2f}.")
+print("Loop ended.")
+'''
+
+lines = int(input("Enter the number of lines: "))
+columns = int(input("Enter the number of columns: "))
+for i in range(1, lines + 1):
+    for j in range(1, columns + 1):
+        print("#", end="")
+    2
+    print()  # print a new line after each row
