@@ -1,4 +1,5 @@
 # this code calculates the average temperature from a list of temperatures using a while loop
+'''
 temperatures = [25, 18, 12, 22]
 sum = 0
 n = 0
@@ -7,9 +8,10 @@ while n <= 3:
     n += 1
 average  = sum / 4
 print("The average temperature is: ", average)
+'''
 
 # --------------------------
-
+'''
 temperatures = [25, 18, 12, 22]
 size = len(temperatures)
 sum = 0
@@ -19,11 +21,11 @@ while n <= size - 1:
     n += 1
 average  = sum / size
 print("The average temperature is: ", average)
-
+'''
 # --------------------------
 
 # so, i did a version with for loop because it is more simple, i don't need to use a variable to control the loop and don't need to check the condition of the loop
-
+'''
 temperatures = [25, 18, 12, 22]
 size = len(temperatures)
 sum = 0
@@ -31,11 +33,11 @@ for t in temperatures:
     sum += t
     average = sum / size
 print("The average temperature is: ", average)
-
+'''
 # it still needs the accumulation variable to calculate the sum, but it is more simple than the while loop version
 
 # --------------------------
-
+'''
 temperatures = [] # create an empty list to store temperatures
 while True:
     t = int(input("Type a temperature (or 0 to stop): "))
@@ -48,9 +50,9 @@ for t in temperatures:
     sum += t
 average = sum / size # the rest of the code is the same, it calculates the average temperature
 print(f"The average temperature is: {average}.")
-
+'''
 # --------------------------
-
+'''
 list = [40, 20, 60, 10]
 value = int(input("Type a value to search in the list: "))
 find = False
@@ -62,9 +64,9 @@ if find:
     print(f"The value {value} was found in the list.")
 else:
     print(f"The value {value} was not found in the list.")
-
+'''
 # --------------------------
-
+'''
 list = [40, 20, 60, 10]
 value = int(input("Type a value to search in the list: "))
 find = value in list  # this is a more simple way to check if the value is in the list
@@ -72,9 +74,9 @@ if find:
     print(f"The value {value} was found in the list.")
 else:
     print(f"The value {value} was not found in the 
-
+'''
 # ---------------------------
-
+'''
 arroz = ["arroz", 5, 8.5]
 feijao = ["feijao", 3, 9.0]
 compras = [arroz, feijao]
@@ -88,9 +90,9 @@ for item in compras:
     for x in item:
         print(x, end=" ")  # this prints the item, quantity and price of each item in the list compras, but in a single line
     print()  # this prints a new line after each item
-
+'''
 # ---------------------------
-
+'''
 lines = 2
 columns = 2
 matrix = []
@@ -105,9 +107,9 @@ for l in range(lines):
     for x in range(columns):
         print(matrix[l][x], end=" ")  # print the matrix in a single line
     print()  # print a new line after each line of the matrix
-
+'''
 # ---------------------------
-
+'''
 lines = 2
 columns = 2
 matrix = []
@@ -124,7 +126,7 @@ for l in range(lines):
         if matrix[l][c] > 10:
             qtde += 1  # count how many values are greater than 10
 print(f"The number of values greater than 10 is: {qtde}.")
-
+'''
 # ---------------------------
 
 matriz = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
