@@ -1,0 +1,7 @@
+valor = float(input('Digite o valor do produto: '))
+a_vista = valor - (valor * 10 / 100)
+parcelado = valor + (valor * 5 / 100)
+print('O produto que custa R${:.2f}, com 10% de desconto à vista, passa a custar R${:.2f}.'.format(valor, a_vista))
+print('O produto que custa R${:.2f}, parcelado em 5 vezes, passa a custar R${:.2f}.'.format(valor, parcelado))
+print('A diferença entre o valor à vista e parcelado é de R${:.2f}.'.format(parcelado - a_vista))
+print('Cada parcela de 5 vezes é de R${:.2f}.'.format(parcelado / 5))
