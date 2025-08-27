@@ -7,14 +7,14 @@ condicao = int(input('Condição de pagamento:\n'
                     'Digite a opção desejada: '))
 
 if condicao == 1:
-    print(f'Valor a pagar: R${produto * 0.9:.2f}')
+    print('Valor a pagar: R${:.2f} com 10% de desconto à vista.'.format(produto * 0.9))
 elif condicao == 2:
-    print(f'Valor a pagar: R${produto * 0.95:.2f}')
+    print('Valor a pagar: R${:.2f} com 5% de desconto à vista no cartão.'.format(produto * 0.95))
 elif condicao == 3:
-    print(f'Valor a pagar: R${produto:.2f} em 2x de R${produto / 2:.2f}')
+    print('Valor a pagar: R${:.2f} em 2x de R${:.2f} sem juros'.format(produto, produto / 2))
 elif condicao == 4:
     parcelas = int(input('Quantas parcelas? '))
     valor_parcela = produto * 1.2 / parcelas
-    print(f'Valor a pagar: R${produto * 1.2:.2f} em {parcelas}x de R${valor_parcela:.2f}')
+    print('Valor a pagar: R${} em {}x de R${:.2f} com juros de 20%'.format(produto * 1.2, parcelas, valor_parcela))
 else:
     print('Opção inválida. Tente novamente.')
