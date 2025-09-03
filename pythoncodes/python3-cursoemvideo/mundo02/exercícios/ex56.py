@@ -13,5 +13,6 @@ for i in range(1, 5):
     elif sexo == "F" and idade < 20:
         idade_mulheres += 1
 media_idades = idade_total / 4
+print('A média entre as idades é de {}.'.format(media_idades))
 print('O homem mais velho é {} e sua idade é {}.'.format(homem_mais_velho, idade_mais_velho))
 print('Temos {} mulheres com menos de 20 anos.'.format(idade_mulheres))
