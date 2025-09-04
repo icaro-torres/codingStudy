@@ -4,9 +4,9 @@ homem_mais_velho = ''
 idade_mais_velho = 0
 
 for i in range(1, 5):
-    nome = str(input('Digite o nome da {}ª pessoa: '.format(i)))
+    nome = str(input('Digite o nome da {}ª pessoa: '.format(i))).strip()
     idade = int(input('Digite a idade da {}ª pessoa: '.format(i)))
-    sexo = str(input('Digite o sexo da {}ª pessoa [M/F]: '.format(i))).upper()
+    sexo = str(input('Digite o sexo da {}ª pessoa [M/F]: '.format(i))).upper().strip()
     idade_total += idade
 
     if sexo == "M" and idade >= idade_mais_velho:
@@ -16,6 +16,6 @@ for i in range(1, 5):
         idade_mulheres += 1
 
 media_idades = idade_total / 4
-print('A média entre as idades é de {}.'.format(media_idades))
-print('O homem mais velho é {} e sua idade é {}.'.format(homem_mais_velho, idade_mais_velho))
+print('A média entre as idades do grupo é de {}.'.format(media_idades))
+print('O homem mais velho é {} e sua idade é {} anos.'.format(homem_mais_velho, idade_mais_velho))
 print('Temos {} mulheres com menos de 20 anos.'.format(idade_mulheres))
