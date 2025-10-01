@@ -1,0 +1,1 @@
+let idadeDoUsuario = prompt('Quais a sua idade?');

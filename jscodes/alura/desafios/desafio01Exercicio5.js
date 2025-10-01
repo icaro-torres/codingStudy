@@ -1,0 +1,1 @@
+let saldoDisponivel = 100;

@@ -1,0 +1,1 @@
+let nomeDoUsuario = prompt('Qual seu nome?');
