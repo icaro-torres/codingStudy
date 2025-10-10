@@ -1,1 +1,0 @@
-let idade = 25;

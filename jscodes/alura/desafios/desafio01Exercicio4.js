@@ -1,1 +1,0 @@
-let numeroDeVendas = 50;
