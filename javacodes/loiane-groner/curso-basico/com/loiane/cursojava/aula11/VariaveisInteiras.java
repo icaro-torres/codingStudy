@@ -1,4 +1,4 @@
-package com.loiane.cursojava.aual11;
+package com.loiane.cursojava.aula11;
 
 public class VariaveisInteiras {
     public static void main(String[] args) {
